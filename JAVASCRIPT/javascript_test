@@ -1,0 +1,59 @@
+En el caso de javascript y react son lenguajes que vemos en el ultimo año de la carrera en el ITEC.
+A diferencia de JAVA, complete las preguntas porque estuve estudiando por mi cuenta a traves de videos de Youtube y cursos
+preparandome para el comienzo del año lectivo.
+
+Respuesta 1: los valores que se imprimirán en pantalla son:
+a)	25
+b)	81
+c)	1, se irá incrementando en 1 cada vez que se ejecute la función.
+d)	alert(typeof(cuadradoDeA)) nos va a indicar que tipo de dato es la variable cuadradoDeA, en este caso es del tipo numérico, entero.
+Respuesta 2: 
+Así como el método “toUpperCase” muestra un string en mayúsculas, también existe el método “toLowerCase” que lo que hace es lo contrario, es decir mostrarnos la variable en minúsculas.
+Respuesta 3:
+Para que la función nos muestre  “Openbravo!!!” necesitamos definir previamente el valor predeterminado del parámetro con Openbravo!!!, de modo que si no se pasa ningún argumento nos muestre dicho valor.
+Respuesta 4:
+Para verificar si una matriz es diagonal superior tenemos que hacer dos boocles para recorrer cada fila de la matriz y a su vez cada elemento de cada fila:
+function esMatrizDiagonal(matriz) 
+    {
+    for(let i = 0; i < matriz.length; ++i) 
+        for(let j = 0; j < matriz[i].length; ++j) 
+            if (i != j && matriz[i][j] !== 0) 
+                return false;
+        return true;
+    }
+
+REACT 
+1-	A Y C
+2-	B
+3-	B Y C
+4-	El estado de un componente es la información que se muestra en pantalla y como se muestra dicha información.
+5-	Los componentes tienen un ciclo de vida en donde se involucran 3 momentos: Montaje, actualización y desmontaje.
+6-	Para setear el estado de un componente se utiliza el método setState.
+7-	B
+8-	Cuando se cambia el estado de un componente, este queda desactualizado por lo que react automáticamente lo actualizará, a su vez esto hace que se vuelva a renderizar para actualizar lo que se muestra con la nueva información.
+9-	function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) =>
+    <li key={number.toString()}>
+      {number}
+    </li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
+const numbers = [1, 2, 3, 4, 5];
+ReactDOM.render(
+  <NumberList numbers={numbers} />,
+  document.getElementById('root')
+);
+10-	.
+11-	C
+12-	B
+13-	.
+14-	Se actualiza el estado del componente cada vez que se hace click en el botón.
+15-	Está mal implementado el cambio de estado del componente, dice this.setState(property: ´propiedad´) y debería decir this.setState({property: ´propiedad´})
+16-	Utilizaría dentro del componente componentDidMount() la función fetch en donde ponemos el url de la api a la que queremos acceder.
+17-	.UseEffect Hook nos permite realizar efectos secundarios en los componentes, como obtener datos, actualización directa del DOM y temporizadores.
+18-	
+
