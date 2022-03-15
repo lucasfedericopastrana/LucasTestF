@@ -1,0 +1,11 @@
+SQL TEST LUCAS
+RESPUESTAS:
+1-	select Name from AD_Window where AD_Window_ID = 100
+2-	update AD_Window
+    set AD_Window_ID = ´--´ + Name
+    where AD_Window_ID = 100
+3-	select * from AD_Tab where AD_Window_ID = 100
+4-	select a.name + b.name from ad_tab as a inner join ad_field b on a.ad_tab_id = b.ad_tab_id where a.ad_windows_id = '100' order by 1,2
+5-	select a.ad_window , b.name, b.ad_tab_id from ad_window a inner join ad_tab b on a.ad_window_id = b.ad_window_id 
+6-	select a.ad_window , a.name, count(c.ad_field_id) from ad_window a inner join ad_tab b on a.ad_window_id = b.ad_window_id inner join ad_field c on b.ad_tab_id = c.ad_tab_id group by a.ad_window , a.name order by 3 desc 
+7-	select a.name, count(b.ad_tab_id)  from ad_window a inner join ad_tab b on a.ad_window_id = b.ad_window_id group by a.name having count(b.ad_tab_id) > 5
