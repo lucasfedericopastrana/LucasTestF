@@ -57,3 +57,5 @@ ReactDOM.render(
 17-	.UseEffect Hook nos permite realizar efectos secundarios en los componentes, como obtener datos, actualización directa del DOM y temporizadores.
 18-	
 
+Lucas
+
