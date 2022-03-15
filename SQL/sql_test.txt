@@ -9,3 +9,5 @@ RESPUESTAS:
 5-	select a.ad_window , b.name, b.ad_tab_id from ad_window a inner join ad_tab b on a.ad_window_id = b.ad_window_id 
 6-	select a.ad_window , a.name, count(c.ad_field_id) from ad_window a inner join ad_tab b on a.ad_window_id = b.ad_window_id inner join ad_field c on b.ad_tab_id = c.ad_tab_id group by a.ad_window , a.name order by 3 desc 
 7-	select a.name, count(b.ad_tab_id)  from ad_window a inner join ad_tab b on a.ad_window_id = b.ad_window_id group by a.name having count(b.ad_tab_id) > 5
+
+Lucas
